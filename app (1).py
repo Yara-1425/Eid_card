@@ -42,7 +42,7 @@ if st.button("توليد الكرت بجودة عالية"):
             
             base_card.paste(circular_img, (x_avatar, y_avatar), mask=circular_img)
             
-            bounding_box = [x_avatar + 6, y_avatar + 6, x_avatar + size[0] - 6, y_avatar + size[1] - 6]
+            bounding_box = [x_avatar + 1, y_avatar + 1, x_avatar + size[0] - 1, y_avatar + size[1] - 1]
             draw.ellipse(bounding_box, outline="#d4af37", width=12)
             
         # معالجة الاسم وإصلاح الخط العربي
