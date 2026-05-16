@@ -12,7 +12,7 @@ st.title("صانع البطاقات لحملة رفادة")
 st.write("قم بتخصيص بطاقتك بإضافة صورتك واسمك، ثم تحميلها مباشرة.")
 
 uploaded_image = st.file_uploader("اختر صورتك الشخصية (اختياري):", type=["png", "jpg", "jpeg"])
-user_name = st.text_input("اكتب اسمك الكريم هنا (اختياري):", placeholder="أحمد عبدالله صالح")
+user_name = st.text_input("اكتب اسمك الكريم هنا (اختياري):", placeholder="الحاج: فلان الفلاني")
 
 if st.button("توليد الكرت بجودة عالية"):
     
