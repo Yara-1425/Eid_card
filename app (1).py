@@ -42,8 +42,8 @@ if st.button("توليد الكرت بجودة عالية"):
             
             base_card.paste(circular_img, (x_avatar, y_avatar), mask=circular_img)
             
-            bounding_box = [x_avatar + 4, y_avatar + 4, x_avatar + size[0] - 4, y_avatar + size[1] - 4]
-            draw.ellipse(bounding_box, outline="#d4af37", width=10)
+            bounding_box = [x_avatar + 6, y_avatar + 6, x_avatar + size[0] - 6, y_avatar + size[1] - 6]
+            draw.ellipse(bounding_box, outline="#d4af37", width=12)
             
         # معالجة الاسم وإصلاح الخط العربي
         if user_name:
