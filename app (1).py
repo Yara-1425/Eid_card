@@ -60,7 +60,7 @@ if st.button("توليد الكرت بجودة عالية"):
             reshaped_text = arabic_reshaper.reshape(user_name)
             final_arabic_text = get_display(reshaped_text)
             
-            y_text = 580 
+            y_text = 725 
             
             left, top, right, bottom = draw.textbbox((0, 0), final_arabic_text, font=font)
             text_width = right - left
@@ -77,7 +77,7 @@ if st.button("توليد الكرت بجودة عالية"):
         byte_im = buffer.getvalue()
         
         st.download_button(
-            label="تحميل الكرت كصورة PNG 📥",
+            label="تحميل الكرت كصورة PNG",
             data=byte_im,
             file_name="my_custom_card.png",
             mime="image/png"
