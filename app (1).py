@@ -27,7 +27,7 @@ if st.button("توليد الكرت بجودة عالية"):
         # معالجة وإضافة الصورة الدائرية مع الإطار الذهبي
         if uploaded_image is not None:
             user_img = Image.open(uploaded_image).convert("RGBA")
-            size = (250, 250)
+            size = (240, 240)
             user_img = ImageOps.fit(user_img, size, Image.Resampling.LANCZOS)
             
             mask = Image.new('L', size, 0)
@@ -38,7 +38,7 @@ if st.button("توليد الكرت بجودة عالية"):
             circular_img.paste(user_img, (0, 0), mask=mask)
             
             x_avatar = (card_width - size[0]) // 2
-            y_avatar = 120 
+            y_avatar = 100 
             
             base_card.paste(circular_img, (x_avatar, y_avatar), mask=circular_img)
             
