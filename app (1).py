@@ -18,7 +18,7 @@ if st.button("توليد الكرت بجودة عالية"):
     
     try:
         # قراءة الخلفية
-        base_card = Image.open("card_background.png").convert("RGBA")
+        base_card = Image.open("card2_background.png").convert("RGBA")
         card_width, card_height = base_card.size
         
         txt_layer = Image.new("RGBA", base_card.size, (255, 255, 255, 0))
